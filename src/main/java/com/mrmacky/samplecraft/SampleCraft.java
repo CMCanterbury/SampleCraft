@@ -20,6 +20,7 @@ public class SampleCraft
         MinecraftForge.EVENT_BUS.register(this);
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         SCItems.register(modEventBus);
+        SCBlocks.register(modEventBus);
         modEventBus.addListener(SCItems::addItemsToTabs);
     }
 

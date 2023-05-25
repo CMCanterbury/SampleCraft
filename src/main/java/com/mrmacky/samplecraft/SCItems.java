@@ -27,6 +27,7 @@ public class SCItems {
     public static void addItemsToTabs(CreativeModeTabEvent.BuildContents event) {
         if (event.getTab() == CreativeModeTabs.FOOD_AND_DRINKS) {
             event.accept(new ItemStack(SHRIMP.get()));
+            event.accept(new ItemStack(SCBlocks.SHRIMP_BLOCK.get().asItem()));
         }
     }
 
