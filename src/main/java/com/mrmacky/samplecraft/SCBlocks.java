@@ -23,7 +23,7 @@ public class SCBlocks {
     //Register Blocks
     public static final RegistryObject<Block> SHRIMP_BLOCK = register("shrimp_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.FROGLIGHT, MaterialColor.COLOR_PINK)
-                    .sound(SoundType.SLIME_BLOCK).requiresCorrectToolForDrops().strength(1.5F)));
+                    .sound(SoundType.SLIME_BLOCK).strength(1.5F)));
 
     //Registration Methods
     static void register(IEventBus bus) {
