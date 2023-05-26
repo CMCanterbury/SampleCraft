@@ -20,9 +20,10 @@ public class SCBlocks {
 
     //Register Blocks
     public static final RegistryObject<Block> SHRIMP_BLOCK = register("shrimp_block",
-            () -> new Block(BlockBehaviour.Properties
+            () -> new ShrimpBlock(BlockBehaviour.Properties
                     .of(Material.FROGLIGHT, MaterialColor.COLOR_PINK)
-                    .sound(SoundType.SLIME_BLOCK)));
+                    .sound(SoundType.SLIME_BLOCK)
+                    .friction(0.9999F)));
 
     //Registration Methods
     static void register(IEventBus bus) {

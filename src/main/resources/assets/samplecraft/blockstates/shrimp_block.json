@@ -1,7 +1,10 @@
 {
   "variants": {
-    "": {
+    "rotten=false": {
       "model": "samplecraft:block/shrimp_block"
+    },
+    "rotten=true": {
+      "model": "minecraft:block/diamond_block"
     }
   }
 }
