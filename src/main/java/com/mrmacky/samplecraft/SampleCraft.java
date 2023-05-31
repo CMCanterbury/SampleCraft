@@ -1,5 +1,6 @@
 package com.mrmacky.samplecraft;
 
+import net.minecraftforge.common.ForgeConfigSpec;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
@@ -12,7 +13,7 @@ import org.apache.logging.log4j.Logger;
 public class SampleCraft
 {
     // Directly reference a log4j logger.
-    private static final Logger LOGGER = LogManager.getLogger();
+    public static final Logger LOGGER = LogManager.getLogger();
     public static final String MODID = "samplecraft";
 
     public SampleCraft() {
@@ -22,6 +23,9 @@ public class SampleCraft
         SCItems.register(modEventBus);
         SCBlocks.register(modEventBus);
         modEventBus.addListener(SCItems::addItemsToTabs);
+
+        IEventBus forgeEventBus = MinecraftForge.EVENT_BUS;
+        forgeEventBus.addListener(Yoink::yeet);
     }
 
 }

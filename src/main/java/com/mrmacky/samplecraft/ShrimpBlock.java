@@ -30,7 +30,7 @@ public class ShrimpBlock extends Block {
 //        entity.setDeltaMovement(entity.getDeltaMovement().multiply(1.0D, upMultiplier, 1.0D));
 
         if (!state.getValue(ROTTEN)) {
-            entity.setDeltaMovement(0, 100, 0);
+            entity.setDeltaMovement(5, 5, 0);
             level.setBlock(pos, state.setValue(ROTTEN, true), 3);
         }
 
